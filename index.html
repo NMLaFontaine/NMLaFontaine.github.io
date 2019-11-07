@@ -1,62 +1,77 @@
 <!DOCTYPE html>
+<html lang="en-us">
+  <head>
 
-<head>
     <meta charset="UTF-8">
-    <title>Nahielys' Page</title>
-</head>
+    <title>Weatherpy</title>
 
-<body>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
 
-    <div style="font-style: italic;">
-        <h1>Biography</h1>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
-        <h3>Today is my birthday</h3>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="row">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="col-xs-9">
+            <a class="navbar-brand" href="index.html" id="logo">HOME</a>
+          </div>
+        </div>
 
-        <h5>These are my cakes:</h5>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right navbar-right-custom">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Plots</a>
+              <ul class="dropdown-menu">
+                <li><a href="subpages/temp.html">Max Temperature</a></li>
+                <li><a href="subpages/humidity.html">Humidity</a></li>
+                <li><a href="subpages/cloudiness.html">Cloudiness</a></li>
+                <li><a href="subpages/wind.html">Wind Speed</a></li>
+              </ul>
+            </li>
+            <li><a href="comparison.html">Comparison</a></li>
+            <li><a href="data.html">Data</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section class="row">
+        <div class="col-md-8">
+          <article class="description-content">
+            <h1 class="description-header">Summary of Data </h1>
+            <hr class="description-hr"/>
+            <!-- <img src="assets/images/Fig1.png" alt="" id="description-image"/> -->
+            <p>Data from the Weatherpy was analyzed by using Python Pandas and graphs were created by matplotlib. The data includes weather of 500+ cities across the world of varying distance from the equator. The data weather compared from these cities include Temperature (F) vs. Latitude, Humidity (%) vs. Latitude, Cloudiness (%) vs. Latitude, Wind Speed (mph) vs. Latitude.  </p>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <section id="area">
+            <div class="content">
+              <h2 class="header">Visualizations</h2>
+              <hr />
+              <div id="images">
+                <a href="temp.html"><img src="C:\Users\nahie\Desktop\SMU Gitlab\Starter\assets\images\Lat_vs_Temp_plot.png" alt="Latitude vs. Max Temperature" class="photo"></a>
+                <a href="humidity.html"><img src="C:\Users\nahie\Desktop\SMU Gitlab\Starter\assets\images\Lat_vs_Humid_plot.png" alt="Latitude vs. Humidity" class="photo"></a>
+                <a href="cloudiness.html"><img src="C:\Users\nahie\Desktop\SMU Gitlab\Starter\assets\images\Lat_vs_Cloud_plot.png" alt="Latitude vs. Cloudiness" class="photo"></a>
+                <a href="wind.html"><img src="C:\Users\nahie\Desktop\SMU Gitlab\Starter\assets\images\Lat_vs_Wind_Plot.png" alt="Latitude vs. Wind Speed" class="photo"></a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
     </div>
+  </body>
 
-    <ul>
-        <li>Espresso <br/> Cupcakes</li>
-        <li>Nothing Bundt a cake with a flower</li>
-        <li>Spooktober cupcakes so spooky</li>
-        <li>Chocolate nom nom cupcakes</li>
-    </ul>
-
-    <img src="https://media.licdn.com/dms/image/C4E03AQEalkk7Jzut0A/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=m4p74XaIikL_QVcNxtpu4-1jTkBJsSX9h0OVXzO32Jk.jpg" />
-
-    <br/>
-
-    <hr/>
-
-    <p>Alexander has a great sweater on today and is totes <small>old and wise</small> yeet</p>
-
-    <a href="https://www.youtube.com/watch?v=4uVmsHxbcD4">Corgis Singing Happy Brithday</a>
-
-    <br/>
-
-    <iframe src="https://www.youtube.com/embed/4uVmsHxbcD4"></iframe>
-
-    <hr/>
-
-    <table border=1>
-        <tr>
-            <th>Student</th>
-            <th>Cupcake Flav</th>
-        </tr>
-        <tr>
-            <td>Pedro</td>
-            <td>Chocolate</td>
-        </tr>
-        <tr>
-            <td>Olesea</td>
-            <td>Carrot Cake</td>
-        </tr>
-        <tr>
-            <td>Donald</td>
-            <td>Reeses PBC</td>
-        </tr>
-    </table>
-
-
-
-</body>
+</html>
